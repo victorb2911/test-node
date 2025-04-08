@@ -4,7 +4,7 @@ This project simulates a DeFi platform with user registration, deposits, and Mer
 **Intentional bugs are included, requiring execution and debugging to submit correct answers.**
 
 ## Source Code
-- **File**: `beginner.js`
+- **File**: `app.js`
 
 ## Prerequisites
 - **Node.js**: v16+
