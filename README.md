@@ -1,7 +1,7 @@
 # test-node : User Management with Merkle Proofs and Crypto Utilities
 
 This project simulates a DeFi platform with user registration, deposits, and Merkle proof generation. 
-```**Intentional bugs are included, requiring execution and debugging to submit correct answers.**```
+**Intentional bugs are included, requiring execution and debugging to submit correct answers.**
 
 ## Source Code
 - **File**: `beginner.js`
