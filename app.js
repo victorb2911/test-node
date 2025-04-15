@@ -14,6 +14,7 @@ const Redis = require('redis');
 const { ethers } = require('ethers');
 const app = express();
 const port = 3000;
+require("dotenv").config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -32,8 +33,8 @@ redisClient.connect().catch(err => logger.error({
 	event: 'redis_connect_error', error: err.message 
 }));
 
-const provider = new ethers.providers.JsonRpcProvider('https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID');
-const governanceTokenAddress = '0xYOUR_GOVERNANCE_TOKEN_ADDRESS';
+const provider = new ethers.providers.JsonRpcProvider(`https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`);
+const governanceTokenAddress = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984';
 const governanceABI = [{
 			"constant":true,
 			"inputs":[{
@@ -52,8 +53,8 @@ const governanceContract = new ethers.Contract(governanceTokenAddress, governanc
 const transporter = mailer.createTransport({ 
 								service: 'gmail', 
 								auth: { 
-									user: 'your-email@gmail.com', 
-									pass: 'your-app-password' 
+									user: process.env.GMAIL_USER,
+    								pass: process.env.GMAIL_PASS, 
 								} 
 							});
 const mutex = new Mutex();
@@ -79,7 +80,7 @@ function generateHash(data) {
 
 function sendEmail(to, subject, html) { 
 	return transporter.sendMail({ 
-				from: 'your-email@gmail.com', 
+				from: process.env.GMAIL_USER, 
 				to, 
 				subject, 
 				html 
@@ -148,7 +149,9 @@ app.put('/users/:id/deposit', async (req, res) => {
 		if (!user || !amount) 
 			return res.status(400).send('Invalid input');
 
+		logger.info(`Old balance: ${user.balance}`);
 		user.balance += amount;
+		logger.info(`New balance: ${user.balance + amount}`);
 		user.points += ACTIVITY_POINTS.deposit * amount;
 		logger.info({ event: 'deposit', userId: user.id, amount });
 		res.json({ id: user.id, balance: user.balance, points: user.points });
@@ -165,9 +168,9 @@ app.post('/users/:id/proof', async (req, res) => {
 		return res.status(400).send('Invalid input');
 
 	const proof = createMerkleProof(walletList, user.wallet);
-	const randomNum = await bigintCryptoUtils.randBetween(1n, 1000n);
+	const randomNum = bigintCryptoUtils.randBetween(1000n, 1n);
 	
-	user.points = ACTIVITY_POINTS.proof + randomNum; 
+	user.points = ACTIVITY_POINTS.proof + Number(randomNum); 
 	logger.info({ event: 'proof_generated', userId: user.id, proof });
 	
 	res.json({ proof, points: user.points });

@@ -1,0 +1,30 @@
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:05:52.989Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:07:23.873Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:07:32.621Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:08:02.989Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:08:17.113Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:09:37.305Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:10:11.973Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"3306bec5-94bc-4649-bf5c-211291a41f93"},"timestamp":"2025-04-15T19:10:26.629Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:10:49.554Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:10:57.444Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:11:24.989Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"8ee45a85-da84-4509-a0ca-f11dcfc081d6"},"timestamp":"2025-04-15T19:11:39.913Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:12:35.781Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:12:39.749Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"dffee069-82ad-4585-ab98-e7a043f1faaf"},"timestamp":"2025-04-15T19:13:06.391Z"}
+{"level":"info","message":{"event":"proof_generated","proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"dffee069-82ad-4585-ab98-e7a043f1faaf"},"timestamp":"2025-04-15T19:13:15.448Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:13:45.840Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:16:06.983Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"788cdab1-abf0-4711-8541-d53488a06bef"},"timestamp":"2025-04-15T19:16:34.730Z"}
+{"level":"info","message":{"event":"proof_generated","proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"788cdab1-abf0-4711-8541-d53488a06bef"},"timestamp":"2025-04-15T19:16:53.629Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:35:15.640Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:35:23.345Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T19:35:27.626Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"5e9a2e80-ff7c-47be-9c83-89425714e698"},"timestamp":"2025-04-15T20:08:36.110Z"}
+{"level":"error","message":{"error":"Connection timeout","event":"email_failed"},"timestamp":"2025-04-15T20:11:19.879Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T20:49:19.213Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-15T20:49:30.843Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-15T20:49:56.368Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-15T20:49:56.369Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"7be67d37-8014-4d19-b1db-d84e90b83b7c"},"timestamp":"2025-04-15T20:49:56.370Z"}
