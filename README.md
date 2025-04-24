@@ -30,6 +30,13 @@ This project simulates a DeFi platform with user registration, deposits, and Mer
 
 **All answers require running and debugging the code due to intentional bugs.**
 
+**Steps to set up repository**
+1. `npm i`
+2. Redis on `docker run -d --name redis-server -p 6379:6379 redis`
+3. Create `.env` with appropriate values.
+4. Use Postman to run the endpoints. They should run fine.
+
+
 1. **Execution Analysis**
 
 - Run `/register`, `/users/:id/deposit`, and `/users/:id/proof`. Why does the `points` value in `/users/:id/proof` behave unexpectedly, and what causes it?
