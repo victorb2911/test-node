@@ -44,6 +44,8 @@ This project simulates a DeFi platform with user registration, deposits, and Mer
 - ANSWER: After calling /register, /deposit, and /proof, the points value behaves unexpectedly.
   Cause: randomNum generated in /proof is a BigInt. When adding it to points (which is a Number), JS throws a silent type mismatch or results in NaN.
   This causes the final points value to be invalid or unpredictable.
+  Logs rom user_activity.log -
+  `{"level":"info","message":{"event":"proof_generated","points":960,"proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"217874ea-b954-4450-bd3c-e3ac26288f68"},"timestamp":"2025-04-28T15:13:21.067Z"}`
 
 2. **Bug Identification**
 
@@ -68,6 +70,8 @@ This project simulates a DeFi platform with user registration, deposits, and Mer
   randomNum is BigInt. Adding it to a Number causes type mismatch.
   Number(randomNum) safely converts it to a number, making addition valid.
   Now points reflects correct logic: base points + secure random bonus.
+
+  Reference why I reversed the arguments of `randBetween` - https://github.com/juanelas/bigint-crypto-utils/blob/main/docs/API.md#randbetween
 
 3. **Debugging Process**
 

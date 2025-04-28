@@ -28,3 +28,25 @@
 {"level":"info","message":"Old balance: 0","timestamp":"2025-04-15T20:49:56.368Z"}
 {"level":"info","message":"New balance: 200","timestamp":"2025-04-15T20:49:56.369Z"}
 {"level":"info","message":{"amount":100,"event":"deposit","userId":"7be67d37-8014-4d19-b1db-d84e90b83b7c"},"timestamp":"2025-04-15T20:49:56.370Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-24T17:32:06.304Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-24T17:35:14.456Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-24T17:35:14.461Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"e5801d67-82fb-4e1d-9c25-f184ae12b537"},"timestamp":"2025-04-24T17:35:14.464Z"}
+{"level":"info","message":{"event":"proof_generated","proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"e5801d67-82fb-4e1d-9c25-f184ae12b537"},"timestamp":"2025-04-24T17:35:28.271Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T14:59:34.493Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-28T15:00:18.746Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-28T15:00:18.747Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"b5fb2543-4e1d-4121-8c6c-48f26d6f729a"},"timestamp":"2025-04-28T15:00:18.747Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:08:31.476Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-28T15:10:11.082Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-28T15:10:11.083Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"2c002b0f-f7d6-4957-8a61-1f712fbac85a"},"timestamp":"2025-04-28T15:10:11.099Z"}
+{"level":"info","message":{"event":"proof_generated","proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"2c002b0f-f7d6-4957-8a61-1f712fbac85a"},"timestamp":"2025-04-28T15:10:21.426Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:12:26.045Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:12:27.982Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-28T15:13:08.865Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-28T15:13:08.866Z"}
+{"level":"info","message":{"amount":100,"event":"deposit","userId":"217874ea-b954-4450-bd3c-e3ac26288f68"},"timestamp":"2025-04-28T15:13:08.866Z"}
+{"level":"info","message":{"event":"proof_generated","points":960,"proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"217874ea-b954-4450-bd3c-e3ac26288f68"},"timestamp":"2025-04-28T15:13:21.067Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:17:29.524Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:17:32.965Z"}

@@ -171,7 +171,7 @@ app.post('/users/:id/proof', async (req, res) => {
 	const randomNum = bigintCryptoUtils.randBetween(1000n, 1n);
 	
 	user.points = ACTIVITY_POINTS.proof + Number(randomNum); 
-	logger.info({ event: 'proof_generated', userId: user.id, proof });
+	logger.info({ event: 'proof_generated', userId: user.id, points: user.points,  proof });
 	
 	res.json({ proof, points: user.points });
 });
