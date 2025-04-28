@@ -50,3 +50,18 @@
 {"level":"info","message":{"event":"proof_generated","points":960,"proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"217874ea-b954-4450-bd3c-e3ac26288f68"},"timestamp":"2025-04-28T15:13:21.067Z"}
 {"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:17:29.524Z"}
 {"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:17:32.965Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:27:32.144Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:27:35.345Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:13.033Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:16.310Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:27.404Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:42.681Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:46.321Z"}
+{"level":"info","message":"Server running at http://localhost:3000","timestamp":"2025-04-28T15:28:57.947Z"}
+{"level":"info","message":"Old balance: 0","timestamp":"2025-04-28T15:29:25.133Z"}
+{"level":"info","message":"New balance: 100","timestamp":"2025-04-28T15:29:25.134Z"}
+{"level":"info","message":{"amountNum":100,"event":"deposit","userId":"9edb3481-1780-4125-847a-f34e719df540"},"timestamp":"2025-04-28T15:29:25.135Z"}
+{"level":"info","message":{"event":"proof_generated","points":685,"proof":[{"data":{"data":[235,174,100,43,247,26,65,92,228,104,60,178,196,126,177,121,9,87,98,6,237,1,248,163,19,64,245,230,114,210,226,19],"type":"Buffer"},"position":"right"}],"userId":"9edb3481-1780-4125-847a-f34e719df540"},"timestamp":"2025-04-28T15:30:05.533Z"}
+{"level":"info","message":"Old balance: 100","timestamp":"2025-04-28T15:33:28.258Z"}
+{"level":"info","message":"New balance: 200","timestamp":"2025-04-28T15:33:28.260Z"}
+{"level":"info","message":{"amountNum":100,"event":"deposit","userId":"9edb3481-1780-4125-847a-f34e719df540"},"timestamp":"2025-04-28T15:33:28.261Z"}

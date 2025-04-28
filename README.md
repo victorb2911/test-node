@@ -94,7 +94,7 @@ This project simulates a DeFi platform with user registration, deposits, and Mer
 
   ```
   Old balance: 0
-  New balance: 200
+  New balance: 100
   {"level":"info","message":{"amount":100,"event":"deposit","userId":"5e9a2e80-ff7c-47be-9c83-89425714e698"}}
   ```
 

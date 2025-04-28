@@ -144,16 +144,17 @@ app.put('/users/:id/deposit', async (req, res) => {
 	const release = await mutex.acquire();
 	try {
 		const { amount } = req.body;
+		const amountNum = Number(amount);
 		const user = users.find(u => u.id === req.params.id);
 		
-		if (!user || !amount) 
+		if (!user || isNaN(amountNum) || amountNum <= 0) 
 			return res.status(400).send('Invalid input');
 
 		logger.info(`Old balance: ${user.balance}`);
-		user.balance += amount;
-		logger.info(`New balance: ${user.balance + amount}`);
-		user.points += ACTIVITY_POINTS.deposit * amount;
-		logger.info({ event: 'deposit', userId: user.id, amount });
+		user.balance += amountNum;
+		logger.info(`New balance: ${user.balance}`);
+		user.points += ACTIVITY_POINTS.deposit * amountNum;
+		logger.info({ event: 'deposit', userId: user.id, amountNum });
 		res.json({ id: user.id, balance: user.balance, points: user.points });
 	} finally {
 		release();
